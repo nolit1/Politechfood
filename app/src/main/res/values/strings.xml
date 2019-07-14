@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Politech food</string>
+    <string name="empty_fields">Заполните все основные поля</string>
+    <string name="no_internet_connection">Нет соединения с интернетом</string>
+    <string name="hint_email">Email</string>
+    <string name="hint_password">Пароль</string>
+    <string name="hint_name">Имя</string>
+    <string name="reg_hint_surname">Фамилия</string>
+    <string name="btn_registration">Зарегистрироваться</string>
+    <string name="btn_login">Войти</string>
+    <string name="log_text_to_registration">Регистрация</string>
+    <string name="near_cafes">Кафе рядом</string>
+    <string name="not_know">Неизвестно</string>
+    <string name="all_cafes">Все заведения</string>
+    <string name="profile_exit">Выход из аккаунта</string>
+    <string name="single_cafe_comments">Отзывы</string>
+    <string name="create_comment_hint">Напишите свой краткий отзыв</string>
+    <string name="public_comment">Опубликовать</string>
+</resources>

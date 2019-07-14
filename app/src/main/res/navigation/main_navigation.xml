@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/main_navigation" app:startDestination="@id/fragmentMain">
+
+    <fragment android:id="@+id/fragmentMain" android:name="com.example.politechfood.mainPackage.FragmentMain"
+              android:label="FragmentMain">
+        <action android:id="@+id/action_fragmentMain_to_singleCaffee" app:destination="@id/singleCaffee"/>
+        <action android:id="@+id/action_fragmentMain_to_profile" app:destination="@id/profile"/>
+        <action android:id="@+id/action_fragmentMain_to_fragmentAllCafes" app:destination="@id/fragmentAllCafes"/>
+    </fragment>
+    <fragment android:id="@+id/singleCaffee" android:name="com.example.politechfood.mainPackage.singleCafePackage.FragmentSingleCafe"
+              android:label="SingleCaffee"/>
+    <fragment android:id="@+id/profile" android:name="com.example.politechfood.profilePackage.FragmentProfile"
+              android:label="Profile"/>
+    <fragment android:id="@+id/fragmentAllCafes" android:name="com.example.politechfood.mainPackage.FragmentAllCafes"
+              android:label="FragmentAllCafes"/>
+</navigation>

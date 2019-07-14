@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/main_swipe">
+
+    <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+        <TextView
+                android:id="@+id/main_recycler_view_tv_title"
+                android:text="@string/near_cafes"
+                android:textColor="@color/colorBlack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/main_btn_block"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="16dp"
+                android:textSize="24sp"
+                android:fontFamily="sans-serif-light"
+        />
+
+        <!--5 кафе рядом-->
+        <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/main_recycler_view_near_cafes"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/main_recycler_view_tv_title"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginTop="8dp"
+        />
+
+
+        <LinearLayout
+                android:id="@+id/main_btn_block"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:orientation="horizontal"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:gravity="end">
+
+            <ImageButton
+                    android:id="@+id/main_btn_all_cafes"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/ic_restaurant_black_24dp"
+                    android:scaleType="fitXY"
+                    android:padding="8dp"
+                    android:background="@drawable/button_background"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginTop="8dp"
+            />
+
+            <ImageButton
+                    android:id="@+id/main_btn_map"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/ic_map_black_24dp"
+                    android:scaleType="fitXY"
+                    android:padding="8dp"
+                    android:background="@drawable/button_background"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginTop="8dp"
+            />
+
+            <ImageButton
+                    android:id="@+id/main_btn_profile"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/ic_person_black_24dp"
+                    android:scaleType="fitXY"
+                    android:padding="8dp"
+                    android:background="@drawable/button_background"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginTop="8dp"
+            />
+
+        </LinearLayout>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
